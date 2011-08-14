@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  extension: MyString
+  path: MyString
+  os_id: 1
+  item_id: 1
+
+two:
+  name: MyString
+  extension: MyString
+  path: MyString
+  os_id: 1
+  item_id: 1

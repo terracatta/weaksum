@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @item.upload_file_name %></h1>
+
+<h2>Hashes</h2>
+<p>
+  <b>Md5:</b>
+  <%= @item.md5 %>
+</p>
+
+<p>
+  <b>Sha1:</b>
+  <%= @item.sha1 %>
+</p>
+
+<p>
+  <b>Sha256:</b>
+  <%= @item.sha256 %>
+</p>
+
+<p>
+  <b>Fuzzy hash:</b>
+  <%= @item.fuzzy_hash %>
+</p>
+
+<h2>Sample information</h2>
+<p>
+  <b>Upload file name:</b>
+  <%= @item.upload_file_name %>
+</p>
+
+<p>
+  <b>Upload content type:</b>
+  <%= @item.upload_content_type %>
+</p>
+
+<p>
+  <b>Upload file size:</b>
+  <%= @item.upload_file_size %>
+</p>
+
+<p>
+  <b>Upload updated at:</b>
+  <%= @item.upload_updated_at %>
+</p>
+
+<h2>Metadata</h2>
+<ul>
+	<% @item.metadata.each do |metadatum| %>
+		<li><strong><%= metadatum.name %></strong>: <%= metadatum.value %></li>
+	<% end  %>
+</ul>
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

@@ -1,0 +1,23 @@
+<h1>Listing os_vendors</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @os_vendors.each do |os_vendor| %>
+  <tr>
+    <td><%= os_vendor.name %></td>
+    <td><%= link_to 'Show', os_vendor %></td>
+    <td><%= link_to 'Edit', edit_os_vendor_path(os_vendor) %></td>
+    <td><%= link_to 'Destroy', os_vendor, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Os vendor', new_os_vendor_path %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  md5: MyString
+  sha1: MyString
+  sha256: MyString
+  fuzzy_hash: MyString
+  upload_file_name: MyString
+  upload_content_type: MyString
+  upload_file_size: 1
+  upload_updated_at: 2011-08-07 00:37:34
+
+two:
+  md5: MyString
+  sha1: MyString
+  sha256: MyString
+  fuzzy_hash: MyString
+  upload_file_name: MyString
+  upload_content_type: MyString
+  upload_file_size: 1
+  upload_updated_at: 2011-08-07 00:37:34

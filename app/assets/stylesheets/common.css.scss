@@ -1,0 +1,26 @@
+
+body {
+	background: #ebebeb url(../assets/background.png) repeat;
+	font-size: 14px;
+}
+
+h1 {
+	text-shadow: 1px 1px 1px #999;
+	font-weight: bold;
+	color:#315079;
+	display:inline-block;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #444;
+	border-bottom:4px solid #999;
+}
+
+div.field {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}

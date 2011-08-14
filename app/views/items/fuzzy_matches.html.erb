@@ -1,0 +1,18 @@
+<h1>Listing items</h1>
+
+<table>
+  <tr>
+    <th>Upload file name</th>
+    <th>Match %</th>
+  </tr>
+
+<% @item_matches.each do |item_match| %>
+  <tr>
+    <td><%= item_match[:item].upload_file_name %></td>
+    <td><%= item_match[:percent_match]%></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />

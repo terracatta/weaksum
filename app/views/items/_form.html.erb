@@ -1,0 +1,32 @@
+<%= form_for(@item) do |f| %>
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+  <%= f.label :upload, "Select Sample to Analyze" %><br>
+  <%= f.file_field :upload %>
+  </div>
+
+  <div class="field">
+  <%= f.label :upload, "Operating System where sample was discovered " %><br>
+  <%= f.file_field :upload %>
+  </div>
+
+  <div class="field">
+  <%= f.label :description, "Add a description about this sample" %><br>
+  <%= f.text_area :description, :cols => 10, :rows => 10 %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Analyze Sample" %>
+  </div>
+<% end %>

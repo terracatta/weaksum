@@ -1,0 +1,7 @@
+/* MIXINS */
+
+@mixin radius($curve) {
+	-moz-border-radius: $curve;
+	-webkit-border-radius: $curve ;
+	border-radius: $curve;
+}

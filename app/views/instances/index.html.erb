@@ -1,0 +1,31 @@
+<h1>Listing instances</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Extension</th>
+    <th>Path</th>
+    <th>Os</th>
+    <th>Item</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @instances.each do |instance| %>
+  <tr>
+    <td><%= instance.name %></td>
+    <td><%= instance.extension %></td>
+    <td><%= instance.path %></td>
+    <td><%= instance.os_id %></td>
+    <td><%= instance.item_id %></td>
+    <td><%= link_to 'Show', instance %></td>
+    <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+    <td><%= link_to 'Destroy', instance, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Instance', new_instance_path %>

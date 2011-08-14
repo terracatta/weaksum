@@ -1,0 +1,29 @@
+<h1>Listing items</h1>
+
+<table>
+  <tr>
+    <th>Upload file name</th>
+    <th>Upload content type</th>
+    <th>Upload file size</th>
+    <th>Upload updated at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.upload_file_name %></td>
+    <td><%= item.upload_content_type %></td>
+    <td><%= item.upload_file_size %></td>
+    <td><%= item.upload_updated_at %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td><%= link_to 'Destroy', item, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Item', new_item_path %>

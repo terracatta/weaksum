@@ -1,0 +1,63 @@
+<div class="span-24 section" id="main">
+	<%= form_tag find_path, :class => "hash-lookup" do %>
+	  <%= text_field_tag :hash,"", :placeholder => "Hash or Filename", :autocomplete => "off" %>
+	  <%= button_tag "Lookup", :id => "submit", :name => "submit", :class => "form_submit", :disabled => false %>
+	<h1 id="or">or</h1>
+	  <%= link_to (button_tag %{New Hash <span class="small-button-text">Upload File</span>}.html_safe, :id => "submit", :name => "submit", :class => "new-hash", :disabled => false), { :controller => "items", :action => "new" }, :class => "new-hash"  %>
+	  <%= hidden_field_tag :hash_type, "" , :class => "hash-type" %>
+<div class="span-24 search-helper helper-placeholder"></div>
+<div class="span-24 search-helper" id="search-inital-text" style="display:none">
+	Enter a filename (full path or name) or a hash. Accepted hashes: <strong>MD5, SHA1, SHA256</strong>, and <strong><a href="http://ssdeep.sourceforge.net/" target="_blank">ssdeep</a> "fuzzy" hashes</strong>.
+</div>
+
+<div class="span-24 search-helper hash-match-options" id="fuzzy-hash-options" style='display:none'>
+	<strong>Nice, that's a Fuzzy Hash!</strong> Use the settings below to fine-tune how "fuzzy" you want your search to be.
+	
+	<div class="fuzzy-search-settings">
+		<div class="fuzzy-tolerance-slider">
+			<p>
+				<label for="tolerance">Fuzzy Match Tolerance:</label>
+				<input type="text" name="tolerance" id="tolerance"/>
+			</p>
+			<div id="slider-range"></div>
+		</div>
+	</div>
+</div>
+<% end %>
+
+<div class="span-24 section">
+	<h1>About</h1>
+	<p>Weak Sum is a web application that allows you to upload and calculate one-way (MD5, SHA1, SHA256) and "fuzzy" hashes (ssdeep) for files that you upload. Site dedicated to the weakest man alive, Brett Cunningham</p>
+</div>
+
+<div class="span-6 feature">
+	<img src="../assets/zoom-24.png"><span class="feature-header">Find it.</span>
+	<p>
+		Nullam eros metus, eleifend nec laoreet id, feugiat vel libero. Vestibulum nibh massa, convallis sodales adipiscing nec, posuere a diam. Curabitur non enim eget massa rhoncus pulvinar. Aliquam in arcu tristique nisl lacinia fringilla.
+	</p>
+</div>
+
+<div class="span-6 feature">
+	<img src="../assets/info-24.png"><span class="feature-header">Learn more.</span>
+	<p>
+		Nullam eros metus, eleifend nec laoreet id, feugiat vel libero. Vestibulum nibh massa, convallis sodales adipiscing nec, posuere a diam. Curabitur non enim eget massa rhoncus pulvinar. Aliquam in arcu tristique nisl lacinia fringilla.
+	</p>
+</div>
+
+<div class="span-6 feature">
+	<img src="../assets/comment-24.png"><span class="feature-header">Discuss it.</span>
+	<p>
+		Nullam eros metus, eleifend nec laoreet id, feugiat vel libero. Vestibulum nibh massa, convallis sodales adipiscing nec, posuere a diam. Curabitur non enim eget massa rhoncus pulvinar. Aliquam in arcu tristique nisl lacinia fringilla.
+	</p>
+</div>
+
+<div class="span-6 last feature">
+	<img src="../assets/shield-24.png"><span class="feature-header">Protect yourself.</span>
+	<p>
+		Nullam eros metus, eleifend nec laoreet id, feugiat vel libero. Vestibulum nibh massa, convallis sodales adipiscing nec, posuere a diam. Curabitur non enim eget massa rhoncus pulvinar. Aliquam in arcu tristique nisl lacinia fringilla.
+	</p>
+</div>
+
+
+
+
