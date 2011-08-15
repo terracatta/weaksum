@@ -21,6 +21,8 @@ gem 'ffi-ssdeep'
 gem 'ffi'
 gem "paperclip", "~> 2.3"
 gem "mini_exiftool"
+gem "therubyracer"
+gem "execjs"
 
 
 # Use unicorn as the web server
